@@ -1,7 +1,7 @@
-# Openit
+# 🍀 openit
 
-# <img align=left src="https://gitlab.com/skywrt/openit/-/raw/main/images/logo.PNG" width=100 height=100> Openit  
-<h6> Powered by <font color="green">Openit PCRS</font></h6>
+<p align="center">
+    <img src="./images/logo.PNG" alt="Logo" width="300" />
 
 ## 简介
 一个开放的订阅库，为了自由的隐私
