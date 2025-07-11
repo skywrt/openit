@@ -89,3 +89,8 @@ jobs:
     - name: git push
       if: ${{ always() }}
       run: ./.github/update-repo.sh   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml ./utils/pool/output.txt to GitHub
+    - name: 删除运行记录
+      uses: Mattraks/delete-workflow-runs@v2
+      with:
+        retain_days: 0
+        keep_minimum_runs: 0
