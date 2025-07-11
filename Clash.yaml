@@ -379,7 +379,6 @@ proxies:
   - {name: 🇺🇸 US 39 → skywrt, server: 94.131.21.174, port: 54075, type: ss, cipher: chacha20-ietf-poly1305, password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3, udp: true}
   - {name: 🇺🇸 US 4 → skywrt, server: 156.146.38.169, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
   - {name: 🇺🇸 US 40 → skywrt, server: 167.88.61.119, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 🇺🇸 US 41 → skywrt, server: klo.986986.shop, port: 443, type: vmess, uuid: b75c9731-408d-4aa6-8ae9-3857205113a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: klo.986986.shop}}, udp: true}
   - {name: 🇺🇸 US 5 → skywrt, server: 156.146.38.167, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
   - {name: 🇺🇸 US 6 → skywrt, server: 37.19.198.160, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
   - {name: 🇺🇸 US 7 → skywrt, server: 156.146.38.168, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
@@ -585,7 +584,6 @@ proxy-groups:
       - 🇺🇸 US 39 → skywrt
       - 🇺🇸 US 4 → skywrt
       - 🇺🇸 US 40 → skywrt
-      - 🇺🇸 US 41 → skywrt
       - 🇺🇸 US 5 → skywrt
       - 🇺🇸 US 6 → skywrt
       - 🇺🇸 US 7 → skywrt
@@ -780,7 +778,6 @@ proxy-groups:
       - 🇺🇸 US 39 → skywrt
       - 🇺🇸 US 4 → skywrt
       - 🇺🇸 US 40 → skywrt
-      - 🇺🇸 US 41 → skywrt
       - 🇺🇸 US 5 → skywrt
       - 🇺🇸 US 6 → skywrt
       - 🇺🇸 US 7 → skywrt
@@ -841,7 +838,6 @@ proxy-groups:
       - 🇺🇸 US 39 → skywrt
       - 🇺🇸 US 4 → skywrt
       - 🇺🇸 US 40 → skywrt
-      - 🇺🇸 US 41 → skywrt
       - 🇺🇸 US 5 → skywrt
       - 🇺🇸 US 6 → skywrt
       - 🇺🇸 US 7 → skywrt
@@ -1205,7 +1201,6 @@ proxy-groups:
       - 🇺🇸 US 39 → skywrt
       - 🇺🇸 US 4 → skywrt
       - 🇺🇸 US 40 → skywrt
-      - 🇺🇸 US 41 → skywrt
       - 🇺🇸 US 5 → skywrt
       - 🇺🇸 US 6 → skywrt
       - 🇺🇸 US 7 → skywrt
