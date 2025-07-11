@@ -1,4 +1,4 @@
-tqdm~=4.64.1
+tqdm~=4.67.1
 requests~=2.32.4
 PyYAML~=6.0
 maxminddb~=2.7.0
