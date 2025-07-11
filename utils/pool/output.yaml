@@ -1436,7 +1436,7 @@ proxies:
       Host: us.freeyyds.dpdns.org
   udp: true
 - name: "\U0001F1FA\U0001F1F3 UN 189 VMS"
-  server: cloudflare-ip.mofashi.ltd
+  server: www.hdmoli.com
   port: 80
   type: vmess
   uuid: 2f38f848-a899-4c87-9807-207a41615e3c
@@ -1448,7 +1448,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: us.freeyyds.dpdns.org
+      Host: fr.freeyyds.dpdns.org
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 190 SSS"
   server: 104.167.197.25
