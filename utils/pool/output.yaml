@@ -186,18 +186,18 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   udp: true
 - name: "\U0001F1F1\U0001F1F9 LT 27 SSS"
-  server: beesyar.org
+  server: 45.87.175.157
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 4a2rfixophdjffa8KVA4Aa
   udp: true
 - name: "\U0001F1F1\U0001F1F9 LT 28 SSS"
-  server: 45.87.175.157
+  server: 45.87.175.192
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
+  password: 1RWwXhwfAB5gAEozU4G2Pg
   udp: true
 - name: "\U0001F1F1\U0001F1F9 LT 29 SSS"
   server: 45.87.175.154
@@ -291,11 +291,11 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
 - name: "\U0001F1F1\U0001F1F9 LT 42 SSS"
-  server: 45.87.175.192
+  server: beesyar.org
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 1RWwXhwfAB5gAEozU4G2Pg
+  password: 4a2rfixophdjffa8KVA4Aa
   udp: true
 - name: "\U0001F1F2\U0001F1E9 MD 43 SSS"
   server: 185.153.197.5
@@ -1309,15 +1309,23 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 360e21d21977dc11
   udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 174 SSS"
-  server: 149.22.87.204
+- name: "\U0001F1FA\U0001F1F8 US 174 VMS"
+  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
   port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
   udp: true
 - name: "\U0001F1EC\U0001F1E7 GB 175 SSS"
-  server: 149.22.87.241
+  server: 149.22.87.204
   port: 443
   type: ss
   cipher: aes-128-gcm
@@ -1330,7 +1338,14 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 177 VMS"
+- name: "\U0001F1EC\U0001F1E7 GB 177 SSS"
+  server: 149.22.87.241
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 178 VMS"
   server: JJJjjjjjmMMmM.4444926.XYZ
   port: 443
   type: vmess
@@ -1345,11 +1360,11 @@ proxies:
     headers:
       Host: JJJjjjjjmMMmM.4444926.XYZ
   udp: true
-- name: "\U0001F1FA\U0001F1F3 UN 178 VMS"
-  server: www.hdmoli.com
+- name: "\U0001F1FA\U0001F1F3 UN 179 VMS"
+  server: FFFggGhYUi.666461.xYZ
   port: 80
   type: vmess
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  uuid: dc50eb1d-244d-4711-b168-a101a5e6fb1b
   alterId: 0
   cipher: auto
   tls: false
@@ -1358,13 +1373,13 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: fr.freeyyds.dpdns.org
+      Host: FFFggGhYUi.666461.xYZ
   udp: true
-- name: "\U0001F1FA\U0001F1F3 UN 179 VMS"
-  server: SSsXXXCvBnmjKi.931.Pp.uA
-  port: 443
+- name: "\U0001F1FA\U0001F1F8 US 180 VMS"
+  server: orvps2.horsenma.net
+  port: 8443
   type: vmess
-  uuid: da128246-33b0-4c88-a44e-d91e9e0a1e05
+  uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
   alterId: 0
   cipher: auto
   tls: true
@@ -1373,25 +1388,10 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: SSsXXXCvBnmjKi.931.Pp.uA
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 180 VMS"
-  server: aAZXsdE.003330333.xYZ
-  port: 80
-  type: vmess
-  uuid: 10b1e371-d734-4306-b67f-0fc1f95c2485
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: aazxsde.003330333.xyz
+      Host: orvps2.horsenma.net
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 181 VMS"
-  server: baota.me
+  server: cloudflare-ip.mofashi.ltd
   port: 80
   type: vmess
   uuid: 2f38f848-a899-4c87-9807-207a41615e3c
@@ -1406,19 +1406,19 @@ proxies:
       Host: us.freeyyds.dpdns.org
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 182 VMS"
-  server: cloudflare-ip.mofashi.ltd
-  port: 80
+  server: SSsXXXCvBnmjKi.931.Pp.uA
+  port: 443
   type: vmess
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  uuid: da128246-33b0-4c88-a44e-d91e9e0a1e05
   alterId: 0
   cipher: auto
-  tls: false
+  tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: us.freeyyds.dpdns.org
+      Host: sssxxxcvbnmjki.931.pp.ua
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 183 TJN"
   server: us.blazeppn.info
@@ -1715,11 +1715,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 171 SSS"
   - "\U0001F1FA\U0001F1F8 US 172 SSS"
   - "\U0001F1FA\U0001F1F8 US 173 SSS"
-  - "\U0001F1EC\U0001F1E7 GB 174 SSS"
+  - "\U0001F1FA\U0001F1F8 US 174 VMS"
   - "\U0001F1EC\U0001F1E7 GB 175 SSS"
   - "\U0001F1FA\U0001F1F8 US 176 SSS"
-  - "\U0001F1FA\U0001F1F8 US 177 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 178 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 177 SSS"
+  - "\U0001F1FA\U0001F1F8 US 178 VMS"
   - "\U0001F1FA\U0001F1F3 UN 179 VMS"
   - "\U0001F1FA\U0001F1F8 US 180 VMS"
   - "\U0001F1FA\U0001F1F8 US 181 VMS"
@@ -1919,11 +1919,11 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 171 SSS"
   - "\U0001F1FA\U0001F1F8 US 172 SSS"
   - "\U0001F1FA\U0001F1F8 US 173 SSS"
-  - "\U0001F1EC\U0001F1E7 GB 174 SSS"
+  - "\U0001F1FA\U0001F1F8 US 174 VMS"
   - "\U0001F1EC\U0001F1E7 GB 175 SSS"
   - "\U0001F1FA\U0001F1F8 US 176 SSS"
-  - "\U0001F1FA\U0001F1F8 US 177 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 178 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 177 SSS"
+  - "\U0001F1FA\U0001F1F8 US 178 VMS"
   - "\U0001F1FA\U0001F1F3 UN 179 VMS"
   - "\U0001F1FA\U0001F1F8 US 180 VMS"
   - "\U0001F1FA\U0001F1F8 US 181 VMS"
