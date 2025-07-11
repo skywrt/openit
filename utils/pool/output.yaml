@@ -192,7 +192,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: QCXDxuDlTTMD7jtgHUjIoj
   udp: true
-- name: "\U0001F1F1\U0001F1F9 LT 28 SSS"
+- name: "\U0001F1EE\U0001F1F7 IR 28 SSS"
   server: beesyar.org
   port: 8080
   type: ss
@@ -1398,29 +1398,29 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 186 VMS"
-  server: orvps2.horsenma.net
-  port: 8443
-  type: vmess
-  uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: orvps2.horsenma.net
-  udp: true
-- name: "\U0001F1EC\U0001F1E7 GB 187 SSS"
+- name: "\U0001F1EC\U0001F1E7 GB 186 SSS"
   server: 149.22.87.204
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 188 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 187 VMS"
+  server: baota.me
+  port: 80
+  type: vmess
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: us.freeyyds.dpdns.org
+  udp: true
+- name: "\U0001F1FA\U0001F1F3 UN 188 VMS"
   server: www.hdmoli.com
   port: 80
   type: vmess
@@ -1584,7 +1584,7 @@ proxy-groups:
   - "\U0001F1EC\U0001F1F7 GR 25 SSS"
   - "\U0001F1ED\U0001F1F7 HR 26 SSS"
   - "\U0001F1EE\U0001F1F7 IR 27 SSS"
-  - "\U0001F1F1\U0001F1F9 LT 28 SSS"
+  - "\U0001F1EE\U0001F1F7 IR 28 SSS"
   - "\U0001F1F1\U0001F1F9 LT 29 SSS"
   - "\U0001F1F1\U0001F1F9 LT 30 SSS"
   - "\U0001F1F1\U0001F1F9 LT 31 SSS"
@@ -1742,9 +1742,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 183 SSS"
   - "\U0001F1EC\U0001F1E7 GB 184 SSS"
   - "\U0001F1FA\U0001F1F8 US 185 SSS"
-  - "\U0001F1FA\U0001F1F8 US 186 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 187 SSS"
-  - "\U0001F1FA\U0001F1F8 US 188 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 186 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 187 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 188 VMS"
   - "\U0001F1FA\U0001F1F8 US 189 SSS"
   - "\U0001F1FA\U0001F1F8 US 190 TJN"
   - "\U0001F1FA\U0001F1F8 US 191 TJN"
@@ -1793,7 +1793,7 @@ proxy-groups:
   - "\U0001F1EC\U0001F1F7 GR 25 SSS"
   - "\U0001F1ED\U0001F1F7 HR 26 SSS"
   - "\U0001F1EE\U0001F1F7 IR 27 SSS"
-  - "\U0001F1F1\U0001F1F9 LT 28 SSS"
+  - "\U0001F1EE\U0001F1F7 IR 28 SSS"
   - "\U0001F1F1\U0001F1F9 LT 29 SSS"
   - "\U0001F1F1\U0001F1F9 LT 30 SSS"
   - "\U0001F1F1\U0001F1F9 LT 31 SSS"
@@ -1951,9 +1951,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 183 SSS"
   - "\U0001F1EC\U0001F1E7 GB 184 SSS"
   - "\U0001F1FA\U0001F1F8 US 185 SSS"
-  - "\U0001F1FA\U0001F1F8 US 186 VMS"
-  - "\U0001F1EC\U0001F1E7 GB 187 SSS"
-  - "\U0001F1FA\U0001F1F8 US 188 VMS"
+  - "\U0001F1EC\U0001F1E7 GB 186 SSS"
+  - "\U0001F1FA\U0001F1F3 UN 187 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 188 VMS"
   - "\U0001F1FA\U0001F1F8 US 189 SSS"
   - "\U0001F1FA\U0001F1F8 US 190 TJN"
   - "\U0001F1FA\U0001F1F8 US 191 TJN"
