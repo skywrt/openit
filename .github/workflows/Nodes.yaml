@@ -36,15 +36,8 @@ jobs:
       run: | #安装pip包
          pip install -r ./utils/pool/requirements.txt
          pip install -r ./utils/clashcheck/requirements.txt
-    - name: Debug parse.py content
-      run: |
-          echo "Debug: Content of parse.py"
-          cat ./utils/pool/parse.py || echo "Error: parse.py not found"
-          echo "Debug: Checking if makeclash exists in parse.py"
-          grep -q "def makeclash" ./utils/pool/parse.py && echo "makeclash found" || echo "makeclash not found"
     - name: pool
       run: cd ./utils/pool/ && python main.py
-
     - name: pull clashcheck file
       id: clashcheck
       run: timeout -k 20 4m wget ${{ secrets.Check_File }} -O ./utils/clashcheck/data/check.yaml -q || timeout -k 20 4m wget ${{ secrets.Check_File }} -O ./utils/clashcheck/data/check.yaml -q
