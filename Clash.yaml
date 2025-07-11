@@ -1,0 +1,1550 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - dns.msftncsi.com
+    - www.msftncsi.com
+    - www.msftconnecttest.com
+    - stun.*.*.*
+    - stun.*.*
+    - miwifi.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - netis.cc
+    - router.asus.com
+    - repeater.asus.com
+    - routerlogin.com
+    - routerlogin.net
+    - tendawifi.com
+    - tendawifi.net
+    - tplinklogin.net
+    - tplinkwifi.net
+    - tplinkrepeater.net
+    - "*.ntp.org.cn"
+    - "*.openwrt.pool.ntp.org"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+    - "*.*.*.srv.nintendo.net"
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - "*.*.xboxlive.com"
+    - speedtest.cros.wr.pvp.net
+  default-nameserver:
+    - 114.114.114.114
+    - 9.9.9.9
+  nameserver:
+    - 1.2.4.8
+    - 210.2.4.8
+    - 223.5.5.5
+    - 223.6.6.6
+    - 52.80.52.52
+    - 117.50.10.10
+    - 180.76.76.76
+    - 119.28.28.28
+    - 119.29.29.29
+    - 114.114.114.114
+    - 114.114.115.115
+    - 101.226.4.6
+    - 218.30.118.6
+    - 123.125.81.6
+    - 140.207.198.6
+    - 202.38.64.1
+    - 202.112.20.131
+    - 202.141.160.95
+    - 202.141.160.99
+    - 202.141.176.95
+    - 202.141.176.99
+    - tls://dot.pub:853
+    - tls://1.12.12.12:853
+    - tls://120.53.53.53:853
+    - https://doh.pub/dns-query
+    - https://sm2.doh.pub/dns-query
+    - https://1.12.12.12/dns-query
+    - https://120.53.53.53/dns-query
+    - https://dns.alidns.com/dns-query
+    - https://doh.dns.sb/dns-query
+    - https://dns.rubyfish.cn/dns-query
+  fallback:
+    - 9.9.9.9
+    - 149.112.112.112
+    - 8.8.4.4
+    - 8.8.8.8
+    - 1.0.0.1
+    - 1.1.1.1
+    - 208.67.220.220
+    - 208.67.220.222
+    - 208.67.222.220
+    - 208.67.222.222
+    - 195.46.39.39
+    - 195.46.39.40
+    - 168.95.1.1
+    - 203.80.96.10
+    - 168.95.192.1
+    - 164.124.101.2
+    - 164.124.107.9
+    - 203.248.252.2
+    - 203.248.242.2
+    - 80.80.80.80
+    - 80.80.81.81
+    - 199.85.126.10
+    - 199.85.127.10
+    - 168.126.63.1
+    - 168.126.63.2
+    - 139.175.252.16
+    - 139.175.55.244
+    - 202.45.84.58
+    - 202.45.84.59
+    - 8.26.56.26
+    - 23.253.163.53
+    - 77.88.8.1
+    - 77.88.8.8
+    - 89.233.43.71
+    - 91.239.100.100
+    - 198.101.242.72
+    - 8.20.247.20
+    - 64.6.64.6
+    - 64.6.65.6
+    - 209.244.0.3
+    - 209.244.0.4
+    - 210.220.163.82
+    - 219.250.36.130
+    - 202.14.67.4
+    - 84.200.69.80
+    - 84.200.70.40
+    - 202.14.67.14
+    - 156.154.70.1
+    - 156.154.71.1
+    - 216.146.35.35
+    - 216.146.36.36
+    - 77.109.148.136
+    - 77.109.148.137
+    - 101.101.101.101
+    - 101.102.103.104
+    - 74.82.42.42
+    - 66.220.18.42
+    - https://dns.quad9.net/dns-query
+    - https://dns9.quad9.net/dns-query
+    - tls://dns.google:853
+    - https://8.8.4.4/dns-query
+    - https://8.8.8.8/dns-query
+    - https://dns.google/dns-query
+    - tls://1.0.0.1:853
+    - tls://1.1.1.1:853
+    - tls://one.one.one.one
+    - tls://1dot1dot1dot1.cloudflare-dns.com
+    - https://1.0.0.1/dns-query
+    - https://1.1.1.1/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.daycat.space/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://dns-family.adguard.com/dns-query
+    - https://dns-unfiltered.adguard.com/dns-query
+    - tls://b.iqiq.io:853
+    - tls://h.iqiq.io:853
+    - tls://j.iqiq.io:853
+    - tls://c.passcloud.xyz:853
+    - tls://x.passcloud.xyz:853
+    - https://a.passcloud.xyz/hk
+    - https://a.passcloud.xyz/am
+    - https://a.passcloud.xyz/us
+    - https://a.passcloud.xyz/sz
+    - https://a.passcloud.xyz/cdn
+    - https://a.passcloud.xyz/dns-query
+    - https://worldwide.passcloud.xyz/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 127.0.0.1/8
+      - 0.0.0.0/32
+    domain:
+      - +.google.com
+      - +.github.com
+      - +.facebook.com
+      - +.twitter.com
+      - +.youtube.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.googleapis.com
+      - +.gvt1.com
+proxies:
+  - {name: AF 1 → skywrt, server: 121.127.46.147, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: AO 1 → skywrt, server: 104.167.197.25, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: 360e21d21977dc11, udp: true}
+  - {name: AT 1 → skywrt, server: 192.36.27.94, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: AT 2 → skywrt, server: 192.71.166.102, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: BE 1 → skywrt, server: 57.129.24.125, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc}}, udp: true}
+  - {name: BE 2 → skywrt, server: 192.71.249.78, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: CZ 1 → skywrt, server: 79.127.233.170, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: CZ 2 → skywrt, server: 195.181.160.6, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: CZ 3 → skywrt, server: 85.255.9.247, port: 1935, type: trojan, password: mZMgM1vKw5, sni: x1-czech-aruba-v2.devefun.org, skip-cert-verify: true, udp: true}
+  - {name: ID 1 → skywrt, server: 223.165.4.173, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: IR 1 → skywrt, server: 91.99.201.235, port: 80, type: ss, cipher: aes-256-gcm, password: 7bgifu8UsiF/RdGesX5zjW6kEqHYKhslGqaccf2HyLA=, udp: true}
+  - {name: IT 1 → skywrt, server: 212.102.47.130, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: IT 10 → skywrt, server: 212.102.53.196, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: IT 11 → skywrt, server: uk-dc1.yangon.club, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: IT 12 → skywrt, server: 212.102.53.80, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: IT 13 → skywrt, server: 212.102.53.193, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: IT 14 → skywrt, server: 212.102.53.79, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: IT 15 → skywrt, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: IT 16 → skywrt, server: 171.22.254.17, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: IT 2 → skywrt, server: 212.102.47.131, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: IT 3 → skywrt, server: 212.102.47.132, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: IT 4 → skywrt, server: 212.102.47.129, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: IT 5 → skywrt, server: 212.102.53.81, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: IT 6 → skywrt, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: IT 7 → skywrt, server: 212.102.53.194, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: IT 8 → skywrt, server: 212.102.53.195, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: IT 9 → skywrt, server: 212.102.53.198, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: LT 1 → skywrt, server: 45.87.175.157, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, udp: true}
+  - {name: LT 10 → skywrt, server: 45.87.175.192, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
+  - {name: LT 11 → skywrt, server: 45.87.175.154, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, udp: true}
+  - {name: LT 12 → skywrt, server: 45.87.175.65, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: LT 13 → skywrt, server: 45.87.175.178, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
+  - {name: LT 14 → skywrt, server: 45.87.175.22, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: LT 15 → skywrt, server: 46.183.184.60, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: LT 16 → skywrt, server: 46.183.185.15, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: LT 17 → skywrt, server: 45.87.175.188, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
+  - {name: LT 18 → skywrt, server: 46.183.185.37, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: LT 19 → skywrt, server: 45.87.175.171, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
+  - {name: LT 2 → skywrt, server: 45.87.175.199, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
+  - {name: LT 3 → skywrt, server: 45.87.175.92, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: LT 4 → skywrt, server: 45.87.175.166, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: QCXDxuDlTTMD7jtgHUjIoj, udp: true}
+  - {name: LT 5 → skywrt, server: 45.87.175.58, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: LT 6 → skywrt, server: 45.87.175.164, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, udp: true}
+  - {name: LT 7 → skywrt, server: 45.87.175.28, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: LT 8 → skywrt, server: 45.87.175.35, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: LT 9 → skywrt, server: beesyar.org, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, udp: true}
+  - {name: MD 1 → skywrt, server: 185.153.197.5, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: MD 2 → skywrt, server: 91.132.94.200, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: NO 1 → skywrt, server: 138.124.115.157, port: 1080, type: ss, cipher: chacha20-ietf-poly1305, password: M-nffO40KlclwbCX9CV1DQ, udp: true}
+  - {name: RO 1 → skywrt, server: 194.14.217.38, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RO 2 → skywrt, server: 89.46.238.35, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RS 1 → skywrt, server: 194.71.126.31, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RW 1 → skywrt, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: RW 2 → skywrt, server: 134.195.198.147, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: inna.cfd}}, udp: true}
+  - {name: RW 3 → skywrt, server: 213.109.147.242, port: 62685, type: ss, cipher: chacha20-ietf-poly1305, password: VpKABcOpNNA0l5G2AVOmw8, udp: true}
+  - {name: SI 1 → skywrt, server: 192.71.244.150, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: TR 1 → skywrt, server: 185.123.101.241, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: TR 2 → skywrt, server: 85.208.108.20, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: UA 1 → skywrt, server: 37.19.198.160, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: UA 2 → skywrt, server: 37.19.198.243, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: UA 3 → skywrt, server: 37.19.198.236, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: ZA 1 → skywrt, server: 154.205.159.100, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇦🇺 AU 1 → skywrt, server: vjp1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vjp1.0bad.com}}, udp: true}
+  - {name: 🇦🇺 AU 2 → skywrt, server: vjp3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vjp3.0bad.com}}, udp: true}
+  - {name: 🇨🇦 CA 1 → skywrt, server: 185.213.23.226, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇨🇦 CA 2 → skywrt, server: 37.143.129.230, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇨🇦 CA 3 → skywrt, server: 142.4.216.225, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: JIhN6rBKkaEboLNXVSv5rq, udp: true}
+  - {name: 🇨🇦 CA 4 → skywrt, server: ca225.vpnbook.com, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: JIhN6rBKkaEboLNXVSv5rq, udp: true}
+  - {name: 🇨🇦 CA 5 → skywrt, server: 51.79.102.253, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 51.79.102.253}}, udp: true}
+  - {name: 🇩🇪 DE 1 → skywrt, server: 104.248.18.1, port: 1935, type: trojan, password: 6gZh2JbfhQ, sni: x1-germany-digitalocean-v2.devefun.org, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE 2 → skywrt, server: 193.108.119.230, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
+  - {name: 🇩🇪 DE 3 → skywrt, server: 92.118.205.228, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇩🇪 DE 4 → skywrt, server: exchange.gameaurela.click, port: 52952, type: ss, cipher: chacha20-ietf-poly1305, password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj, udp: true}
+  - {name: 🇪🇸 ES 1 → skywrt, server: uk.opensocks.site, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: MjJhY, udp: true}
+  - {name: 🇪🇸 ES 2 → skywrt, server: 92.38.171.215, port: 31348, type: ss, cipher: chacha20-ietf-poly1305, password: 0RsrcFJ1vOsWEqg3P55hvaacKfuShT0cc1h0t8AD0NA8u1uR, udp: true}
+  - {name: 🇫🇷 FR 1 → skywrt, server: 195.154.185.174, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇫🇷 FR 2 → skywrt, server: 195.154.169.198, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇫🇷 FR 3 → skywrt, server: de-freevmess.privateip.net, port: 8443, type: ss, cipher: aes-256-gcm, password: 5bda2736-81e7-43b4-86fc-286f8f8e6578, udp: true}
+  - {name: 🇫🇷 FR 4 → skywrt, server: 51.195.119.47, port: 1080, type: ss, cipher: chacha20-ietf-poly1305, password: qXvO7zYU7KeaB0Md7DQLow, udp: true}
+  - {name: 🇬🇧 GB 1 → skywrt, server: 85.210.120.237, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
+  - {name: 🇬🇧 GB 2 → skywrt, server: 62.100.205.48, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇬🇧 GB 3 → skywrt, server: 141.98.101.178, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇬🇧 GB 4 → skywrt, server: mx2.drawnrisha.one, port: 55988, type: ss, cipher: chacha20-ietf-poly1305, password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9, udp: true}
+  - {name: 🇬🇧 GB 5 → skywrt, server: 185.5.38.111, port: 55988, type: ss, cipher: chacha20-ietf-poly1305, password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa, udp: true}
+  - {name: 🇬🇧 GB 6 → skywrt, server: 185.126.239.250, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇬🇧 GB 7 → skywrt, server: 185.231.233.112, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇭🇰 HK 1 → skywrt, server: 185.189.160.98, port: 64759, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇭🇰 HK 2 → skywrt, server: 154.223.16.212, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇭🇰 HK 3 → skywrt, server: 150.107.46.21, port: 8083, type: ssr, cipher: aes-256-cfb, password: iFqnzSscN, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 🇭🇰 HK 4 → skywrt, server: 154.223.20.79, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇭🇰 HK 5 → skywrt, server: 180.215.130.123, port: 46452, type: vmess, uuid: c5414fe0-018b-473a-aa3b-f210f2ba42f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 180.215.130.123}}, udp: true}
+  - {name: 🇮🇳 IN 1 → skywrt, server: 103.111.114.29, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: 360e21d21977dc11, udp: true}
+  - {name: 🇮🇳 IN 2 → skywrt, server: 134.209.147.198, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇮🇸 IS 1 → skywrt, server: 37.235.49.152, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇰🇷 KR 1 → skywrt, server: p222.panda001.net, port: 15098, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇰🇷 KR 2 → skywrt, server: p141.panda001.net, port: 4652, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇳🇱 NL 1 → skywrt, server: 193.29.139.189, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: QCXDxuDlTTMD7jtgHUjIoj, udp: true}
+  - {name: 🇳🇱 NL 2 → skywrt, server: 193.29.139.251, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 🇳🇱 NL 3 → skywrt, server: 51.15.17.169, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇳🇱 NL 4 → skywrt, server: 193.29.139.179, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
+  - {name: 🇳🇱 NL 5 → skywrt, server: 109.201.152.181, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: 🇳🇱 NL 6 → skywrt, server: 193.29.139.202, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 🇳🇱 NL 7 → skywrt, server: 103.104.247.47, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 🇳🇱 NL 8 → skywrt, server: 103.104.247.49, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 🇳🇱 NL 9 → skywrt, server: 51.15.23.63, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇵🇱 PL 1 → skywrt, server: war.ssvpnapp.win, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: d3837224ed465f00, udp: true}
+  - {name: 🇵🇱 PL 2 → skywrt, server: 45.144.48.63, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: d3837224ed465f00, udp: true}
+  - {name: 🇷🇺 RU 1 → skywrt, server: 89.23.103.125, port: 42090, type: ss, cipher: chacha20-ietf-poly1305, password: uQS5ntVqC00sSKkeNzUiD3, udp: true}
+  - {name: 🇷🇺 RU 10 → skywrt, server: 5.188.181.201, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: 🇷🇺 RU 11 → skywrt, server: 62.133.63.212, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: c40641c1f89e7acb, udp: true}
+  - {name: 🇷🇺 RU 12 → skywrt, server: tr.vpnsparta.pro, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: c40641c1f89e7acb, udp: true}
+  - {name: 🇷🇺 RU 13 → skywrt, server: 194.87.31.68, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: R2UGad61FGO5, udp: true}
+  - {name: 🇷🇺 RU 2 → skywrt, server: 77.246.102.112, port: 60117, type: ss, cipher: chacha20-ietf-poly1305, password: Y1hjiUmSgucgzYYJ0WtqwW, udp: true}
+  - {name: 🇷🇺 RU 3 → skywrt, server: 147.45.178.200, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: c40641c1f89e7acb, udp: true}
+  - {name: 🇷🇺 RU 4 → skywrt, server: 2.59.163.106, port: 2222, type: ss, cipher: chacha20-ietf-poly1305, password: qscavF5UviIL-8V-E4raBA, udp: true}
+  - {name: 🇷🇺 RU 5 → skywrt, server: 217.30.10.18, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: 🇷🇺 RU 6 → skywrt, server: 217.30.10.18, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: 🇷🇺 RU 7 → skywrt, server: 45.144.54.33, port: 34803, type: ss, cipher: chacha20-ietf-poly1305, password: LiHQX9cDbdooBHlIg0eiqQ, udp: true}
+  - {name: 🇷🇺 RU 8 → skywrt, server: 45.139.24.24, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: 360e21d21977dc11, udp: true}
+  - {name: 🇷🇺 RU 9 → skywrt, server: 5.188.181.201, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 🇸🇬 SG 1 → skywrt, server: 81.90.189.18, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 🇸🇬 SG 2 → skywrt, server: 81.90.189.18, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 🇸🇬 SG 3 → skywrt, server: 217.197.161.136, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 🇸🇬 SG 4 → skywrt, server: 217.197.161.138, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 🇸🇬 SG 5 → skywrt, server: 103.253.26.134, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eeh7iewe.com}}, udp: true}
+  - {name: 🇸🇬 SG 6 → skywrt, server: 8.214.33.158, port: 80, type: vmess, uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 8.214.33.158}}, udp: true}
+  - {name: 🇺🇸 US 1 → skywrt, server: 156.146.38.170, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 10 → skywrt, server: 173.244.56.9, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 11 → skywrt, server: admin.c1.webramz.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1xO2cqPazqjGfCfd, udp: true}
+  - {name: 🇺🇸 US 12 → skywrt, server: freakconfig13.felafel.org, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1xO2cqPazqjGfCfd, udp: true}
+  - {name: 🇺🇸 US 13 → skywrt, server: series-a2.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
+  - {name: 🇺🇸 US 14 → skywrt, server: 149.34.244.68, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 15 → skywrt, server: series-a2-mec.varzesh360.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
+  - {name: 🇺🇸 US 16 → skywrt, server: series-a2.varzesh360.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
+  - {name: 🇺🇸 US 17 → skywrt, server: series-a1.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
+  - {name: 🇺🇸 US 18 → skywrt, server: admin.c4.webramz.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 69MUii7VDwMqh7Hz, udp: true}
+  - {name: 🇺🇸 US 19 → skywrt, server: series-a2-mec.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
+  - {name: 🇺🇸 US 2 → skywrt, server: 156.146.38.169, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 20 → skywrt, server: admin.c3.webramz.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
+  - {name: 🇺🇸 US 21 → skywrt, server: admin.c2.webramz.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: WstuSnlu4ieA9M0L, udp: true}
+  - {name: 🇺🇸 US 22 → skywrt, server: 156.146.62.164, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 23 → skywrt, server: 156.146.62.161, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 24 → skywrt, server: 156.146.62.162, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 25 → skywrt, server: 156.146.62.163, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 26 → skywrt, server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top, port: 443, type: vmess, uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top}}, udp: true}
+  - {name: 🇺🇸 US 27 → skywrt, server: 104.21.3.189, port: 2053, type: vmess, uuid: 2fc37713-3017-497e-ff2d-965f826a19a3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc2d4.89060004.xyz}}, udp: true}
+  - {name: 🇺🇸 US 28 → skywrt, server: 149.22.87.204, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 29 → skywrt, server: 149.22.87.241, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 3 → skywrt, server: 156.146.38.167, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 30 → skywrt, server: JJJjjjjjmMMmM.4444926.XYZ, port: 443, type: vmess, uuid: dc50eb1d-244d-4711-b168-a101a5e6fb1b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: JJJjjjjjmMMmM.4444926.XYZ}}, udp: true}
+  - {name: 🇺🇸 US 31 → skywrt, server: FFFggGhYUi.666461.xYZ, port: 80, type: vmess, uuid: dc50eb1d-244d-4711-b168-a101a5e6fb1b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: FFFggGhYUi.666461.xYZ}}, udp: true}
+  - {name: 🇺🇸 US 32 → skywrt, server: 104.21.64.1, port: 8443, type: vmess, uuid: 2bd0c9d7-f239-437e-a1e1-6cf830af2a1a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us01.sh-cloudflare.sbs}}, udp: true}
+  - {name: 🇺🇸 US 33 → skywrt, server: api.jquery.com, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: admin.kasrax.ir}}, udp: true}
+  - {name: 🇺🇸 US 34 → skywrt, server: www.hdmoli.com, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fr.freeyyds.dpdns.org}}, udp: true}
+  - {name: 🇺🇸 US 35 → skywrt, server: 104.18.149.76, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us.kkp.me.eu.org}}, udp: true}
+  - {name: 🇺🇸 US 36 → skywrt, server: 204.136.10.115, port: 1866, type: ss, cipher: chacha20-ietf-poly1305, password: oXGp1+ihlfKg826H, udp: true}
+  - {name: 🇺🇸 US 37 → skywrt, server: 38.165.233.93, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇺🇸 US 38 → skywrt, server: SSsXXXCvBnmjKi.931.Pp.uA, port: 443, type: vmess, uuid: da128246-33b0-4c88-a44e-d91e9e0a1e05, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: SSsXXXCvBnmjKi.931.Pp.uA}}, udp: true}
+  - {name: 🇺🇸 US 39 → skywrt, server: 154.90.62.168, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇺🇸 US 4 → skywrt, server: 156.146.38.168, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 40 → skywrt, server: 104.21.48.1, port: 8443, type: vmess, uuid: 2bd0c9d7-f239-437e-a1e1-6cf830af2a1a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us01.sh-cloudflare.sbs}}, udp: true}
+  - {name: 🇺🇸 US 41 → skywrt, server: aAZXsdE.003330333.xYZ, port: 80, type: vmess, uuid: 10b1e371-d734-4306-b67f-0fc1f95c2485, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aazxsde.003330333.xyz}}, udp: true}
+  - {name: 🇺🇸 US 42 → skywrt, server: www.wn03.cc, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us.freeyyds.dpdns.org}}, udp: true}
+  - {name: 🇺🇸 US 43 → skywrt, server: 104.21.20.162, port: 8443, type: vmess, uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: orvps2.horsenma.net}}, udp: true}
+  - {name: 🇺🇸 US 44 → skywrt, server: 208.67.105.196, port: 42029, type: ss, cipher: chacha20-ietf-poly1305, password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD, udp: true}
+  - {name: 🇺🇸 US 45 → skywrt, server: orvps2.horsenma.net, port: 8443, type: vmess, uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: orvps2.horsenma.net}}, udp: true}
+  - {name: 🇺🇸 US 46 → skywrt, server: 38.54.57.90, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇺🇸 US 47 → skywrt, server: baota.me, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us.freeyyds.dpdns.org}}, udp: true}
+  - {name: 🇺🇸 US 48 → skywrt, server: cloudflare-ip.mofashi.ltd, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us.freeyyds.dpdns.org}}, udp: true}
+  - {name: 🇺🇸 US 49 → skywrt, server: SSsXXXCvBnmjKi.931.Pp.uA, port: 443, type: vmess, uuid: da128246-33b0-4c88-a44e-d91e9e0a1e05, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sssxxxcvbnmjki.931.pp.ua}}, udp: true}
+  - {name: 🇺🇸 US 5 → skywrt, server: 104.192.226.106, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇺🇸 US 50 → skywrt, server: 208.67.105.87, port: 42501, type: ss, cipher: chacha20-ietf-poly1305, password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf, udp: true}
+  - {name: 🇺🇸 US 51 → skywrt, server: us01.sh-cloudflare.sbs, port: 8443, type: vmess, uuid: 2bd0c9d7-f239-437e-a1e1-6cf830af2a1a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us01.sh-cloudflare.sbs}}, udp: true}
+  - {name: 🇺🇸 US 52 → skywrt, server: us.blazeppn.info, port: 443, type: trojan, password: xxoo, sni: us.blazeppn.info, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 53 → skywrt, server: 198.23.229.250, port: 443, type: trojan, password: 2ee85121-31de-4581-a492-eb00f606e392, sni: rc6.freeguard.org, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 54 → skywrt, server: 166.1.157.228, port: 55330, type: ss, cipher: chacha20-ietf-poly1305, password: rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg, udp: true}
+  - {name: 🇺🇸 US 55 → skywrt, server: 192.3.107.252, port: 443, type: trojan, password: 2ee85121-31de-4581-a492-eb00f606e392, sni: rc8.freeguard.org, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 56 → skywrt, server: 94.131.127.239, port: 49072, type: ss, cipher: chacha20-ietf-poly1305, password: XKa5DRhnuBdgfKeZNXff5po96u2RC5VaBZUSToCGoCH4ZBhoGMZcrT9CY646rH3nWRn24d7FEEujr4QwUDFuYQFAoHjtfAgN, udp: true}
+  - {name: 🇺🇸 US 57 → skywrt, server: pr.fastsoonlink.com, port: 40030, type: ss, cipher: chacha20-ietf-poly1305, password: 7905a32b-012c-4711-89e2-73b6713eca75, udp: true}
+  - {name: 🇺🇸 US 58 → skywrt, server: 154.90.63.177, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇺🇸 US 59 → skywrt, server: beta.mattenadene.org, port: 54075, type: ss, cipher: chacha20-ietf-poly1305, password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3, udp: true}
+  - {name: 🇺🇸 US 6 → skywrt, server: 173.244.56.6, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 60 → skywrt, server: 94.131.21.174, port: 54075, type: ss, cipher: chacha20-ietf-poly1305, password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3, udp: true}
+  - {name: 🇺🇸 US 61 → skywrt, server: 149.7.16.248, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 149.7.16.248}}, udp: true}
+  - {name: 🇺🇸 US 7 → skywrt, server: 172.67.131.27, port: 2053, type: vmess, uuid: 350e2b01-d410-44a6-90ba-6483f1062972, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rak2d4.89060004.xyz}}, udp: true}
+  - {name: 🇺🇸 US 8 → skywrt, server: 45.55.2.232, port: 14293, type: ss, cipher: aes-256-cfb, password: 2170f8, udp: true}
+  - {name: 🇺🇸 US 9 → skywrt, server: klo.986986.shop, port: 443, type: vmess, uuid: b75c9731-408d-4aa6-8ae9-3857205113a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: klo.986986.shop}}, udp: true}
+proxy-groups:
+  - name: 🌐 节点选择
+    type: select
+    proxies:
+      - ✋ 手动选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: ✋ 手动选择
+    type: select
+    proxies:
+      - AF 1 → skywrt
+      - AO 1 → skywrt
+      - AT 1 → skywrt
+      - AT 2 → skywrt
+      - BE 1 → skywrt
+      - BE 2 → skywrt
+      - CZ 1 → skywrt
+      - CZ 2 → skywrt
+      - CZ 3 → skywrt
+      - ID 1 → skywrt
+      - IR 1 → skywrt
+      - IT 1 → skywrt
+      - IT 10 → skywrt
+      - IT 11 → skywrt
+      - IT 12 → skywrt
+      - IT 13 → skywrt
+      - IT 14 → skywrt
+      - IT 15 → skywrt
+      - IT 16 → skywrt
+      - IT 2 → skywrt
+      - IT 3 → skywrt
+      - IT 4 → skywrt
+      - IT 5 → skywrt
+      - IT 6 → skywrt
+      - IT 7 → skywrt
+      - IT 8 → skywrt
+      - IT 9 → skywrt
+      - LT 1 → skywrt
+      - LT 10 → skywrt
+      - LT 11 → skywrt
+      - LT 12 → skywrt
+      - LT 13 → skywrt
+      - LT 14 → skywrt
+      - LT 15 → skywrt
+      - LT 16 → skywrt
+      - LT 17 → skywrt
+      - LT 18 → skywrt
+      - LT 19 → skywrt
+      - LT 2 → skywrt
+      - LT 3 → skywrt
+      - LT 4 → skywrt
+      - LT 5 → skywrt
+      - LT 6 → skywrt
+      - LT 7 → skywrt
+      - LT 8 → skywrt
+      - LT 9 → skywrt
+      - MD 1 → skywrt
+      - MD 2 → skywrt
+      - NO 1 → skywrt
+      - RO 1 → skywrt
+      - RO 2 → skywrt
+      - RS 1 → skywrt
+      - RW 1 → skywrt
+      - RW 2 → skywrt
+      - RW 3 → skywrt
+      - SI 1 → skywrt
+      - TR 1 → skywrt
+      - TR 2 → skywrt
+      - UA 1 → skywrt
+      - UA 2 → skywrt
+      - UA 3 → skywrt
+      - ZA 1 → skywrt
+      - 🇦🇺 AU 1 → skywrt
+      - 🇦🇺 AU 2 → skywrt
+      - 🇨🇦 CA 1 → skywrt
+      - 🇨🇦 CA 2 → skywrt
+      - 🇨🇦 CA 3 → skywrt
+      - 🇨🇦 CA 4 → skywrt
+      - 🇨🇦 CA 5 → skywrt
+      - 🇩🇪 DE 1 → skywrt
+      - 🇩🇪 DE 2 → skywrt
+      - 🇩🇪 DE 3 → skywrt
+      - 🇩🇪 DE 4 → skywrt
+      - 🇪🇸 ES 1 → skywrt
+      - 🇪🇸 ES 2 → skywrt
+      - 🇫🇷 FR 1 → skywrt
+      - 🇫🇷 FR 2 → skywrt
+      - 🇫🇷 FR 3 → skywrt
+      - 🇫🇷 FR 4 → skywrt
+      - 🇬🇧 GB 1 → skywrt
+      - 🇬🇧 GB 2 → skywrt
+      - 🇬🇧 GB 3 → skywrt
+      - 🇬🇧 GB 4 → skywrt
+      - 🇬🇧 GB 5 → skywrt
+      - 🇬🇧 GB 6 → skywrt
+      - 🇬🇧 GB 7 → skywrt
+      - 🇭🇰 HK 1 → skywrt
+      - 🇭🇰 HK 2 → skywrt
+      - 🇭🇰 HK 3 → skywrt
+      - 🇭🇰 HK 4 → skywrt
+      - 🇭🇰 HK 5 → skywrt
+      - 🇮🇳 IN 1 → skywrt
+      - 🇮🇳 IN 2 → skywrt
+      - 🇮🇸 IS 1 → skywrt
+      - 🇰🇷 KR 1 → skywrt
+      - 🇰🇷 KR 2 → skywrt
+      - 🇳🇱 NL 1 → skywrt
+      - 🇳🇱 NL 2 → skywrt
+      - 🇳🇱 NL 3 → skywrt
+      - 🇳🇱 NL 4 → skywrt
+      - 🇳🇱 NL 5 → skywrt
+      - 🇳🇱 NL 6 → skywrt
+      - 🇳🇱 NL 7 → skywrt
+      - 🇳🇱 NL 8 → skywrt
+      - 🇳🇱 NL 9 → skywrt
+      - 🇵🇱 PL 1 → skywrt
+      - 🇵🇱 PL 2 → skywrt
+      - 🇷🇺 RU 1 → skywrt
+      - 🇷🇺 RU 10 → skywrt
+      - 🇷🇺 RU 11 → skywrt
+      - 🇷🇺 RU 12 → skywrt
+      - 🇷🇺 RU 13 → skywrt
+      - 🇷🇺 RU 2 → skywrt
+      - 🇷🇺 RU 3 → skywrt
+      - 🇷🇺 RU 4 → skywrt
+      - 🇷🇺 RU 5 → skywrt
+      - 🇷🇺 RU 6 → skywrt
+      - 🇷🇺 RU 7 → skywrt
+      - 🇷🇺 RU 8 → skywrt
+      - 🇷🇺 RU 9 → skywrt
+      - 🇸🇬 SG 1 → skywrt
+      - 🇸🇬 SG 2 → skywrt
+      - 🇸🇬 SG 3 → skywrt
+      - 🇸🇬 SG 4 → skywrt
+      - 🇸🇬 SG 5 → skywrt
+      - 🇸🇬 SG 6 → skywrt
+      - 🇺🇸 US 1 → skywrt
+      - 🇺🇸 US 10 → skywrt
+      - 🇺🇸 US 11 → skywrt
+      - 🇺🇸 US 12 → skywrt
+      - 🇺🇸 US 13 → skywrt
+      - 🇺🇸 US 14 → skywrt
+      - 🇺🇸 US 15 → skywrt
+      - 🇺🇸 US 16 → skywrt
+      - 🇺🇸 US 17 → skywrt
+      - 🇺🇸 US 18 → skywrt
+      - 🇺🇸 US 19 → skywrt
+      - 🇺🇸 US 2 → skywrt
+      - 🇺🇸 US 20 → skywrt
+      - 🇺🇸 US 21 → skywrt
+      - 🇺🇸 US 22 → skywrt
+      - 🇺🇸 US 23 → skywrt
+      - 🇺🇸 US 24 → skywrt
+      - 🇺🇸 US 25 → skywrt
+      - 🇺🇸 US 26 → skywrt
+      - 🇺🇸 US 27 → skywrt
+      - 🇺🇸 US 28 → skywrt
+      - 🇺🇸 US 29 → skywrt
+      - 🇺🇸 US 3 → skywrt
+      - 🇺🇸 US 30 → skywrt
+      - 🇺🇸 US 31 → skywrt
+      - 🇺🇸 US 32 → skywrt
+      - 🇺🇸 US 33 → skywrt
+      - 🇺🇸 US 34 → skywrt
+      - 🇺🇸 US 35 → skywrt
+      - 🇺🇸 US 36 → skywrt
+      - 🇺🇸 US 37 → skywrt
+      - 🇺🇸 US 38 → skywrt
+      - 🇺🇸 US 39 → skywrt
+      - 🇺🇸 US 4 → skywrt
+      - 🇺🇸 US 40 → skywrt
+      - 🇺🇸 US 41 → skywrt
+      - 🇺🇸 US 42 → skywrt
+      - 🇺🇸 US 43 → skywrt
+      - 🇺🇸 US 44 → skywrt
+      - 🇺🇸 US 45 → skywrt
+      - 🇺🇸 US 46 → skywrt
+      - 🇺🇸 US 47 → skywrt
+      - 🇺🇸 US 48 → skywrt
+      - 🇺🇸 US 49 → skywrt
+      - 🇺🇸 US 5 → skywrt
+      - 🇺🇸 US 50 → skywrt
+      - 🇺🇸 US 51 → skywrt
+      - 🇺🇸 US 52 → skywrt
+      - 🇺🇸 US 53 → skywrt
+      - 🇺🇸 US 54 → skywrt
+      - 🇺🇸 US 55 → skywrt
+      - 🇺🇸 US 56 → skywrt
+      - 🇺🇸 US 57 → skywrt
+      - 🇺🇸 US 58 → skywrt
+      - 🇺🇸 US 59 → skywrt
+      - 🇺🇸 US 6 → skywrt
+      - 🇺🇸 US 60 → skywrt
+      - 🇺🇸 US 61 → skywrt
+      - 🇺🇸 US 7 → skywrt
+      - 🇺🇸 US 8 → skywrt
+      - 🇺🇸 US 9 → skywrt
+  - name: 💡 自动选择
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - AF 1 → skywrt
+      - AO 1 → skywrt
+      - AT 1 → skywrt
+      - AT 2 → skywrt
+      - BE 1 → skywrt
+      - BE 2 → skywrt
+      - CZ 1 → skywrt
+      - CZ 2 → skywrt
+      - CZ 3 → skywrt
+      - ID 1 → skywrt
+      - IR 1 → skywrt
+      - IT 1 → skywrt
+      - IT 10 → skywrt
+      - IT 11 → skywrt
+      - IT 12 → skywrt
+      - IT 13 → skywrt
+      - IT 14 → skywrt
+      - IT 15 → skywrt
+      - IT 16 → skywrt
+      - IT 2 → skywrt
+      - IT 3 → skywrt
+      - IT 4 → skywrt
+      - IT 5 → skywrt
+      - IT 6 → skywrt
+      - IT 7 → skywrt
+      - IT 8 → skywrt
+      - IT 9 → skywrt
+      - LT 1 → skywrt
+      - LT 10 → skywrt
+      - LT 11 → skywrt
+      - LT 12 → skywrt
+      - LT 13 → skywrt
+      - LT 14 → skywrt
+      - LT 15 → skywrt
+      - LT 16 → skywrt
+      - LT 17 → skywrt
+      - LT 18 → skywrt
+      - LT 19 → skywrt
+      - LT 2 → skywrt
+      - LT 3 → skywrt
+      - LT 4 → skywrt
+      - LT 5 → skywrt
+      - LT 6 → skywrt
+      - LT 7 → skywrt
+      - LT 8 → skywrt
+      - LT 9 → skywrt
+      - MD 1 → skywrt
+      - MD 2 → skywrt
+      - NO 1 → skywrt
+      - RO 1 → skywrt
+      - RO 2 → skywrt
+      - RS 1 → skywrt
+      - RW 1 → skywrt
+      - RW 2 → skywrt
+      - RW 3 → skywrt
+      - SI 1 → skywrt
+      - TR 1 → skywrt
+      - TR 2 → skywrt
+      - UA 1 → skywrt
+      - UA 2 → skywrt
+      - UA 3 → skywrt
+      - ZA 1 → skywrt
+      - 🇦🇺 AU 1 → skywrt
+      - 🇦🇺 AU 2 → skywrt
+      - 🇨🇦 CA 1 → skywrt
+      - 🇨🇦 CA 2 → skywrt
+      - 🇨🇦 CA 3 → skywrt
+      - 🇨🇦 CA 4 → skywrt
+      - 🇨🇦 CA 5 → skywrt
+      - 🇩🇪 DE 1 → skywrt
+      - 🇩🇪 DE 2 → skywrt
+      - 🇩🇪 DE 3 → skywrt
+      - 🇩🇪 DE 4 → skywrt
+      - 🇪🇸 ES 1 → skywrt
+      - 🇪🇸 ES 2 → skywrt
+      - 🇫🇷 FR 1 → skywrt
+      - 🇫🇷 FR 2 → skywrt
+      - 🇫🇷 FR 3 → skywrt
+      - 🇫🇷 FR 4 → skywrt
+      - 🇬🇧 GB 1 → skywrt
+      - 🇬🇧 GB 2 → skywrt
+      - 🇬🇧 GB 3 → skywrt
+      - 🇬🇧 GB 4 → skywrt
+      - 🇬🇧 GB 5 → skywrt
+      - 🇬🇧 GB 6 → skywrt
+      - 🇬🇧 GB 7 → skywrt
+      - 🇭🇰 HK 1 → skywrt
+      - 🇭🇰 HK 2 → skywrt
+      - 🇭🇰 HK 3 → skywrt
+      - 🇭🇰 HK 4 → skywrt
+      - 🇭🇰 HK 5 → skywrt
+      - 🇮🇳 IN 1 → skywrt
+      - 🇮🇳 IN 2 → skywrt
+      - 🇮🇸 IS 1 → skywrt
+      - 🇰🇷 KR 1 → skywrt
+      - 🇰🇷 KR 2 → skywrt
+      - 🇳🇱 NL 1 → skywrt
+      - 🇳🇱 NL 2 → skywrt
+      - 🇳🇱 NL 3 → skywrt
+      - 🇳🇱 NL 4 → skywrt
+      - 🇳🇱 NL 5 → skywrt
+      - 🇳🇱 NL 6 → skywrt
+      - 🇳🇱 NL 7 → skywrt
+      - 🇳🇱 NL 8 → skywrt
+      - 🇳🇱 NL 9 → skywrt
+      - 🇵🇱 PL 1 → skywrt
+      - 🇵🇱 PL 2 → skywrt
+      - 🇷🇺 RU 1 → skywrt
+      - 🇷🇺 RU 10 → skywrt
+      - 🇷🇺 RU 11 → skywrt
+      - 🇷🇺 RU 12 → skywrt
+      - 🇷🇺 RU 13 → skywrt
+      - 🇷🇺 RU 2 → skywrt
+      - 🇷🇺 RU 3 → skywrt
+      - 🇷🇺 RU 4 → skywrt
+      - 🇷🇺 RU 5 → skywrt
+      - 🇷🇺 RU 6 → skywrt
+      - 🇷🇺 RU 7 → skywrt
+      - 🇷🇺 RU 8 → skywrt
+      - 🇷🇺 RU 9 → skywrt
+      - 🇸🇬 SG 1 → skywrt
+      - 🇸🇬 SG 2 → skywrt
+      - 🇸🇬 SG 3 → skywrt
+      - 🇸🇬 SG 4 → skywrt
+      - 🇸🇬 SG 5 → skywrt
+      - 🇸🇬 SG 6 → skywrt
+      - 🇺🇸 US 1 → skywrt
+      - 🇺🇸 US 10 → skywrt
+      - 🇺🇸 US 11 → skywrt
+      - 🇺🇸 US 12 → skywrt
+      - 🇺🇸 US 13 → skywrt
+      - 🇺🇸 US 14 → skywrt
+      - 🇺🇸 US 15 → skywrt
+      - 🇺🇸 US 16 → skywrt
+      - 🇺🇸 US 17 → skywrt
+      - 🇺🇸 US 18 → skywrt
+      - 🇺🇸 US 19 → skywrt
+      - 🇺🇸 US 2 → skywrt
+      - 🇺🇸 US 20 → skywrt
+      - 🇺🇸 US 21 → skywrt
+      - 🇺🇸 US 22 → skywrt
+      - 🇺🇸 US 23 → skywrt
+      - 🇺🇸 US 24 → skywrt
+      - 🇺🇸 US 25 → skywrt
+      - 🇺🇸 US 26 → skywrt
+      - 🇺🇸 US 27 → skywrt
+      - 🇺🇸 US 28 → skywrt
+      - 🇺🇸 US 29 → skywrt
+      - 🇺🇸 US 3 → skywrt
+      - 🇺🇸 US 30 → skywrt
+      - 🇺🇸 US 31 → skywrt
+      - 🇺🇸 US 32 → skywrt
+      - 🇺🇸 US 33 → skywrt
+      - 🇺🇸 US 34 → skywrt
+      - 🇺🇸 US 35 → skywrt
+      - 🇺🇸 US 36 → skywrt
+      - 🇺🇸 US 37 → skywrt
+      - 🇺🇸 US 38 → skywrt
+      - 🇺🇸 US 39 → skywrt
+      - 🇺🇸 US 4 → skywrt
+      - 🇺🇸 US 40 → skywrt
+      - 🇺🇸 US 41 → skywrt
+      - 🇺🇸 US 42 → skywrt
+      - 🇺🇸 US 43 → skywrt
+      - 🇺🇸 US 44 → skywrt
+      - 🇺🇸 US 45 → skywrt
+      - 🇺🇸 US 46 → skywrt
+      - 🇺🇸 US 47 → skywrt
+      - 🇺🇸 US 48 → skywrt
+      - 🇺🇸 US 49 → skywrt
+      - 🇺🇸 US 5 → skywrt
+      - 🇺🇸 US 50 → skywrt
+      - 🇺🇸 US 51 → skywrt
+      - 🇺🇸 US 52 → skywrt
+      - 🇺🇸 US 53 → skywrt
+      - 🇺🇸 US 54 → skywrt
+      - 🇺🇸 US 55 → skywrt
+      - 🇺🇸 US 56 → skywrt
+      - 🇺🇸 US 57 → skywrt
+      - 🇺🇸 US 58 → skywrt
+      - 🇺🇸 US 59 → skywrt
+      - 🇺🇸 US 6 → skywrt
+      - 🇺🇸 US 60 → skywrt
+      - 🇺🇸 US 61 → skywrt
+      - 🇺🇸 US 7 → skywrt
+      - 🇺🇸 US 8 → skywrt
+      - 🇺🇸 US 9 → skywrt
+  - name: 🇭🇰 香港节点
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - 🇭🇰 HK 1 → skywrt
+      - 🇭🇰 HK 2 → skywrt
+      - 🇭🇰 HK 3 → skywrt
+      - 🇭🇰 HK 4 → skywrt
+      - 🇭🇰 HK 5 → skywrt
+  - name: 🇯🇵 日本节点
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - DIRECT
+  - name: 🇺🇲 美国节点
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - 🇺🇸 US 1 → skywrt
+      - 🇺🇸 US 10 → skywrt
+      - 🇺🇸 US 11 → skywrt
+      - 🇺🇸 US 12 → skywrt
+      - 🇺🇸 US 13 → skywrt
+      - 🇺🇸 US 14 → skywrt
+      - 🇺🇸 US 15 → skywrt
+      - 🇺🇸 US 16 → skywrt
+      - 🇺🇸 US 17 → skywrt
+      - 🇺🇸 US 18 → skywrt
+      - 🇺🇸 US 19 → skywrt
+      - 🇺🇸 US 2 → skywrt
+      - 🇺🇸 US 20 → skywrt
+      - 🇺🇸 US 21 → skywrt
+      - 🇺🇸 US 22 → skywrt
+      - 🇺🇸 US 23 → skywrt
+      - 🇺🇸 US 24 → skywrt
+      - 🇺🇸 US 25 → skywrt
+      - 🇺🇸 US 26 → skywrt
+      - 🇺🇸 US 27 → skywrt
+      - 🇺🇸 US 28 → skywrt
+      - 🇺🇸 US 29 → skywrt
+      - 🇺🇸 US 3 → skywrt
+      - 🇺🇸 US 30 → skywrt
+      - 🇺🇸 US 31 → skywrt
+      - 🇺🇸 US 32 → skywrt
+      - 🇺🇸 US 33 → skywrt
+      - 🇺🇸 US 34 → skywrt
+      - 🇺🇸 US 35 → skywrt
+      - 🇺🇸 US 36 → skywrt
+      - 🇺🇸 US 37 → skywrt
+      - 🇺🇸 US 38 → skywrt
+      - 🇺🇸 US 39 → skywrt
+      - 🇺🇸 US 4 → skywrt
+      - 🇺🇸 US 40 → skywrt
+      - 🇺🇸 US 41 → skywrt
+      - 🇺🇸 US 42 → skywrt
+      - 🇺🇸 US 43 → skywrt
+      - 🇺🇸 US 44 → skywrt
+      - 🇺🇸 US 45 → skywrt
+      - 🇺🇸 US 46 → skywrt
+      - 🇺🇸 US 47 → skywrt
+      - 🇺🇸 US 48 → skywrt
+      - 🇺🇸 US 49 → skywrt
+      - 🇺🇸 US 5 → skywrt
+      - 🇺🇸 US 50 → skywrt
+      - 🇺🇸 US 51 → skywrt
+      - 🇺🇸 US 52 → skywrt
+      - 🇺🇸 US 53 → skywrt
+      - 🇺🇸 US 54 → skywrt
+      - 🇺🇸 US 55 → skywrt
+      - 🇺🇸 US 56 → skywrt
+      - 🇺🇸 US 57 → skywrt
+      - 🇺🇸 US 58 → skywrt
+      - 🇺🇸 US 59 → skywrt
+      - 🇺🇸 US 6 → skywrt
+      - 🇺🇸 US 60 → skywrt
+      - 🇺🇸 US 61 → skywrt
+      - 🇺🇸 US 7 → skywrt
+      - 🇺🇸 US 8 → skywrt
+      - 🇺🇸 US 9 → skywrt
+  - name: 🇹🇼 台湾节点
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - DIRECT
+  - name: 🇸🇬 狮城节点
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - 🇸🇬 SG 1 → skywrt
+      - 🇸🇬 SG 2 → skywrt
+      - 🇸🇬 SG 3 → skywrt
+      - 🇸🇬 SG 4 → skywrt
+      - 🇸🇬 SG 5 → skywrt
+      - 🇸🇬 SG 6 → skywrt
+  - name: 🇰🇷 韩国节点
+    type: url-test
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 100
+    proxies:
+      - 🇰🇷 KR 1 → skywrt
+      - 🇰🇷 KR 2 → skywrt
+  - name: 🌍 其他地区
+    type: select
+    proxies:
+      - AF 1 → skywrt
+      - AO 1 → skywrt
+      - AT 1 → skywrt
+      - AT 2 → skywrt
+      - BE 1 → skywrt
+      - BE 2 → skywrt
+      - CZ 1 → skywrt
+      - CZ 2 → skywrt
+      - CZ 3 → skywrt
+      - ID 1 → skywrt
+      - IR 1 → skywrt
+      - IT 1 → skywrt
+      - IT 10 → skywrt
+      - IT 11 → skywrt
+      - IT 12 → skywrt
+      - IT 13 → skywrt
+      - IT 14 → skywrt
+      - IT 15 → skywrt
+      - IT 16 → skywrt
+      - IT 2 → skywrt
+      - IT 3 → skywrt
+      - IT 4 → skywrt
+      - IT 5 → skywrt
+      - IT 6 → skywrt
+      - IT 7 → skywrt
+      - IT 8 → skywrt
+      - IT 9 → skywrt
+      - LT 1 → skywrt
+      - LT 10 → skywrt
+      - LT 11 → skywrt
+      - LT 12 → skywrt
+      - LT 13 → skywrt
+      - LT 14 → skywrt
+      - LT 15 → skywrt
+      - LT 16 → skywrt
+      - LT 17 → skywrt
+      - LT 18 → skywrt
+      - LT 19 → skywrt
+      - LT 2 → skywrt
+      - LT 3 → skywrt
+      - LT 4 → skywrt
+      - LT 5 → skywrt
+      - LT 6 → skywrt
+      - LT 7 → skywrt
+      - LT 8 → skywrt
+      - LT 9 → skywrt
+      - MD 1 → skywrt
+      - MD 2 → skywrt
+      - NO 1 → skywrt
+      - RO 1 → skywrt
+      - RO 2 → skywrt
+      - RS 1 → skywrt
+      - RW 1 → skywrt
+      - RW 2 → skywrt
+      - RW 3 → skywrt
+      - SI 1 → skywrt
+      - TR 1 → skywrt
+      - TR 2 → skywrt
+      - UA 1 → skywrt
+      - UA 2 → skywrt
+      - UA 3 → skywrt
+      - ZA 1 → skywrt
+      - 🇦🇺 AU 1 → skywrt
+      - 🇦🇺 AU 2 → skywrt
+      - 🇨🇦 CA 1 → skywrt
+      - 🇨🇦 CA 2 → skywrt
+      - 🇨🇦 CA 3 → skywrt
+      - 🇨🇦 CA 4 → skywrt
+      - 🇨🇦 CA 5 → skywrt
+      - 🇩🇪 DE 1 → skywrt
+      - 🇩🇪 DE 2 → skywrt
+      - 🇩🇪 DE 3 → skywrt
+      - 🇩🇪 DE 4 → skywrt
+      - 🇪🇸 ES 1 → skywrt
+      - 🇪🇸 ES 2 → skywrt
+      - 🇫🇷 FR 1 → skywrt
+      - 🇫🇷 FR 2 → skywrt
+      - 🇫🇷 FR 3 → skywrt
+      - 🇫🇷 FR 4 → skywrt
+      - 🇬🇧 GB 1 → skywrt
+      - 🇬🇧 GB 2 → skywrt
+      - 🇬🇧 GB 3 → skywrt
+      - 🇬🇧 GB 4 → skywrt
+      - 🇬🇧 GB 5 → skywrt
+      - 🇬🇧 GB 6 → skywrt
+      - 🇬🇧 GB 7 → skywrt
+      - 🇮🇳 IN 1 → skywrt
+      - 🇮🇳 IN 2 → skywrt
+      - 🇮🇸 IS 1 → skywrt
+      - 🇳🇱 NL 1 → skywrt
+      - 🇳🇱 NL 2 → skywrt
+      - 🇳🇱 NL 3 → skywrt
+      - 🇳🇱 NL 4 → skywrt
+      - 🇳🇱 NL 5 → skywrt
+      - 🇳🇱 NL 6 → skywrt
+      - 🇳🇱 NL 7 → skywrt
+      - 🇳🇱 NL 8 → skywrt
+      - 🇳🇱 NL 9 → skywrt
+      - 🇵🇱 PL 1 → skywrt
+      - 🇵🇱 PL 2 → skywrt
+      - 🇷🇺 RU 1 → skywrt
+      - 🇷🇺 RU 10 → skywrt
+      - 🇷🇺 RU 11 → skywrt
+      - 🇷🇺 RU 12 → skywrt
+      - 🇷🇺 RU 13 → skywrt
+      - 🇷🇺 RU 2 → skywrt
+      - 🇷🇺 RU 3 → skywrt
+      - 🇷🇺 RU 4 → skywrt
+      - 🇷🇺 RU 5 → skywrt
+      - 🇷🇺 RU 6 → skywrt
+      - 🇷🇺 RU 7 → skywrt
+      - 🇷🇺 RU 8 → skywrt
+      - 🇷🇺 RU 9 → skywrt
+  - name: 🪜 故障转移
+    type: fallback
+    url: https://www.google.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - AF 1 → skywrt
+      - AO 1 → skywrt
+      - AT 1 → skywrt
+      - AT 2 → skywrt
+      - BE 1 → skywrt
+      - BE 2 → skywrt
+      - CZ 1 → skywrt
+      - CZ 2 → skywrt
+      - CZ 3 → skywrt
+      - ID 1 → skywrt
+      - IR 1 → skywrt
+      - IT 1 → skywrt
+      - IT 10 → skywrt
+      - IT 11 → skywrt
+      - IT 12 → skywrt
+      - IT 13 → skywrt
+      - IT 14 → skywrt
+      - IT 15 → skywrt
+      - IT 16 → skywrt
+      - IT 2 → skywrt
+      - IT 3 → skywrt
+      - IT 4 → skywrt
+      - IT 5 → skywrt
+      - IT 6 → skywrt
+      - IT 7 → skywrt
+      - IT 8 → skywrt
+      - IT 9 → skywrt
+      - LT 1 → skywrt
+      - LT 10 → skywrt
+      - LT 11 → skywrt
+      - LT 12 → skywrt
+      - LT 13 → skywrt
+      - LT 14 → skywrt
+      - LT 15 → skywrt
+      - LT 16 → skywrt
+      - LT 17 → skywrt
+      - LT 18 → skywrt
+      - LT 19 → skywrt
+      - LT 2 → skywrt
+      - LT 3 → skywrt
+      - LT 4 → skywrt
+      - LT 5 → skywrt
+      - LT 6 → skywrt
+      - LT 7 → skywrt
+      - LT 8 → skywrt
+      - LT 9 → skywrt
+      - MD 1 → skywrt
+      - MD 2 → skywrt
+      - NO 1 → skywrt
+      - RO 1 → skywrt
+      - RO 2 → skywrt
+      - RS 1 → skywrt
+      - RW 1 → skywrt
+      - RW 2 → skywrt
+      - RW 3 → skywrt
+      - SI 1 → skywrt
+      - TR 1 → skywrt
+      - TR 2 → skywrt
+      - UA 1 → skywrt
+      - UA 2 → skywrt
+      - UA 3 → skywrt
+      - ZA 1 → skywrt
+      - 🇦🇺 AU 1 → skywrt
+      - 🇦🇺 AU 2 → skywrt
+      - 🇨🇦 CA 1 → skywrt
+      - 🇨🇦 CA 2 → skywrt
+      - 🇨🇦 CA 3 → skywrt
+      - 🇨🇦 CA 4 → skywrt
+      - 🇨🇦 CA 5 → skywrt
+      - 🇩🇪 DE 1 → skywrt
+      - 🇩🇪 DE 2 → skywrt
+      - 🇩🇪 DE 3 → skywrt
+      - 🇩🇪 DE 4 → skywrt
+      - 🇪🇸 ES 1 → skywrt
+      - 🇪🇸 ES 2 → skywrt
+      - 🇫🇷 FR 1 → skywrt
+      - 🇫🇷 FR 2 → skywrt
+      - 🇫🇷 FR 3 → skywrt
+      - 🇫🇷 FR 4 → skywrt
+      - 🇬🇧 GB 1 → skywrt
+      - 🇬🇧 GB 2 → skywrt
+      - 🇬🇧 GB 3 → skywrt
+      - 🇬🇧 GB 4 → skywrt
+      - 🇬🇧 GB 5 → skywrt
+      - 🇬🇧 GB 6 → skywrt
+      - 🇬🇧 GB 7 → skywrt
+      - 🇭🇰 HK 1 → skywrt
+      - 🇭🇰 HK 2 → skywrt
+      - 🇭🇰 HK 3 → skywrt
+      - 🇭🇰 HK 4 → skywrt
+      - 🇭🇰 HK 5 → skywrt
+      - 🇮🇳 IN 1 → skywrt
+      - 🇮🇳 IN 2 → skywrt
+      - 🇮🇸 IS 1 → skywrt
+      - 🇰🇷 KR 1 → skywrt
+      - 🇰🇷 KR 2 → skywrt
+      - 🇳🇱 NL 1 → skywrt
+      - 🇳🇱 NL 2 → skywrt
+      - 🇳🇱 NL 3 → skywrt
+      - 🇳🇱 NL 4 → skywrt
+      - 🇳🇱 NL 5 → skywrt
+      - 🇳🇱 NL 6 → skywrt
+      - 🇳🇱 NL 7 → skywrt
+      - 🇳🇱 NL 8 → skywrt
+      - 🇳🇱 NL 9 → skywrt
+      - 🇵🇱 PL 1 → skywrt
+      - 🇵🇱 PL 2 → skywrt
+      - 🇷🇺 RU 1 → skywrt
+      - 🇷🇺 RU 10 → skywrt
+      - 🇷🇺 RU 11 → skywrt
+      - 🇷🇺 RU 12 → skywrt
+      - 🇷🇺 RU 13 → skywrt
+      - 🇷🇺 RU 2 → skywrt
+      - 🇷🇺 RU 3 → skywrt
+      - 🇷🇺 RU 4 → skywrt
+      - 🇷🇺 RU 5 → skywrt
+      - 🇷🇺 RU 6 → skywrt
+      - 🇷🇺 RU 7 → skywrt
+      - 🇷🇺 RU 8 → skywrt
+      - 🇷🇺 RU 9 → skywrt
+      - 🇸🇬 SG 1 → skywrt
+      - 🇸🇬 SG 2 → skywrt
+      - 🇸🇬 SG 3 → skywrt
+      - 🇸🇬 SG 4 → skywrt
+      - 🇸🇬 SG 5 → skywrt
+      - 🇸🇬 SG 6 → skywrt
+      - 🇺🇸 US 1 → skywrt
+      - 🇺🇸 US 10 → skywrt
+      - 🇺🇸 US 11 → skywrt
+      - 🇺🇸 US 12 → skywrt
+      - 🇺🇸 US 13 → skywrt
+      - 🇺🇸 US 14 → skywrt
+      - 🇺🇸 US 15 → skywrt
+      - 🇺🇸 US 16 → skywrt
+      - 🇺🇸 US 17 → skywrt
+      - 🇺🇸 US 18 → skywrt
+      - 🇺🇸 US 19 → skywrt
+      - 🇺🇸 US 2 → skywrt
+      - 🇺🇸 US 20 → skywrt
+      - 🇺🇸 US 21 → skywrt
+      - 🇺🇸 US 22 → skywrt
+      - 🇺🇸 US 23 → skywrt
+      - 🇺🇸 US 24 → skywrt
+      - 🇺🇸 US 25 → skywrt
+      - 🇺🇸 US 26 → skywrt
+      - 🇺🇸 US 27 → skywrt
+      - 🇺🇸 US 28 → skywrt
+      - 🇺🇸 US 29 → skywrt
+      - 🇺🇸 US 3 → skywrt
+      - 🇺🇸 US 30 → skywrt
+      - 🇺🇸 US 31 → skywrt
+      - 🇺🇸 US 32 → skywrt
+      - 🇺🇸 US 33 → skywrt
+      - 🇺🇸 US 34 → skywrt
+      - 🇺🇸 US 35 → skywrt
+      - 🇺🇸 US 36 → skywrt
+      - 🇺🇸 US 37 → skywrt
+      - 🇺🇸 US 38 → skywrt
+      - 🇺🇸 US 39 → skywrt
+      - 🇺🇸 US 4 → skywrt
+      - 🇺🇸 US 40 → skywrt
+      - 🇺🇸 US 41 → skywrt
+      - 🇺🇸 US 42 → skywrt
+      - 🇺🇸 US 43 → skywrt
+      - 🇺🇸 US 44 → skywrt
+      - 🇺🇸 US 45 → skywrt
+      - 🇺🇸 US 46 → skywrt
+      - 🇺🇸 US 47 → skywrt
+      - 🇺🇸 US 48 → skywrt
+      - 🇺🇸 US 49 → skywrt
+      - 🇺🇸 US 5 → skywrt
+      - 🇺🇸 US 50 → skywrt
+      - 🇺🇸 US 51 → skywrt
+      - 🇺🇸 US 52 → skywrt
+      - 🇺🇸 US 53 → skywrt
+      - 🇺🇸 US 54 → skywrt
+      - 🇺🇸 US 55 → skywrt
+      - 🇺🇸 US 56 → skywrt
+      - 🇺🇸 US 57 → skywrt
+      - 🇺🇸 US 58 → skywrt
+      - 🇺🇸 US 59 → skywrt
+      - 🇺🇸 US 6 → skywrt
+      - 🇺🇸 US 60 → skywrt
+      - 🇺🇸 US 61 → skywrt
+      - 🇺🇸 US 7 → skywrt
+      - 🇺🇸 US 8 → skywrt
+      - 🇺🇸 US 9 → skywrt
+  - name: 👉 国内网站
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 👉 国外网站
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 👉 例外网站
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📲 聊天软件
+    type: select
+    proxies:
+      - 🪜 故障转移
+      - 🌐 节点选择
+      - 💡 自动选择
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🌏 日韩媒体
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇯🇵 日本节点
+      - 🇭🇰 香港节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🌏 港台媒体
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📹 YouTube
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🎵 Spotify
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🎬 NETFLIX
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🎬 Disney+
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🎬 HBO
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🎬 Prime
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📺 Emby
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📺 TikTok
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇯🇵 日本节点
+      - 🇭🇰 香港节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📺 巴哈姆特
+    type: select
+    proxies:
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - ☁️ 全球直连
+      - 🇹🇼 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📺 哔哩哔哩
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📺 爱奇艺
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🧩 微软服务
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 🌐 节点选择
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 🎮 游戏平台
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🌐 节点选择
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: 📥 BT & PT
+    type: select
+    proxies:
+      - ☁️ 全球直连
+      - 💡 自动选择
+      - 🪜 故障转移
+      - 🌐 节点选择
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇹🇼 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌍 其他地区
+  - name: ☁️ 全球直连
+    type: select
+    proxies:
+      - DIRECT
+  - name: 🛡 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+cfw-bypass:
+  - localhost
+  - 127.*
+  - 10.*
+  - 172.16.*
+  - 172.17.*
+  - 172.18.*
+  - 172.19.*
+  - 172.20.*
+  - 172.21.*
+  - 172.22.*
+  - 172.23.*
+  - 172.24.*
+  - 172.25.*
+  - 172.26.*
+  - 172.27.*
+  - 172.28.*
+  - 172.29.*
+  - 172.30.*
+  - 172.31.*
+  - 192.168.*
+  - <local>
+rules:
+ - GEOIP,CN,👉 国内网站
+ - MATCH,👉 例外网站
