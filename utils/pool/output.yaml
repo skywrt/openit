@@ -1374,6 +1374,21 @@ proxies:
   password: shadowsocks
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 184 VMS"
+  server: orvps2.horsenma.net
+  port: 8443
+  type: vmess
+  uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: orvps2.horsenma.net
+  udp: true
+- name: "\U0001F1FA\U0001F1F3 UN 185 VMS"
   server: rak1ding.89060004.xyz
   port: 2083
   type: vmess
@@ -1387,21 +1402,6 @@ proxies:
     path: /
     headers:
       Host: rak1d3.988988.shop
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 185 VMS"
-  server: www.hdmoli.com
-  port: 80
-  type: vmess
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fr.freeyyds.dpdns.org
   udp: true
 - name: "\U0001F1FA\U0001F1F3 UN 186 VMS"
   server: baota.me
@@ -1739,7 +1739,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 182 SSS"
   - "\U0001F1EC\U0001F1E7 GB 183 SSS"
   - "\U0001F1FA\U0001F1F8 US 184 VMS"
-  - "\U0001F1FA\U0001F1F8 US 185 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 185 VMS"
   - "\U0001F1FA\U0001F1F3 UN 186 VMS"
   - "\U0001F1FA\U0001F1F8 US 187 VMS"
   - "\U0001F1FA\U0001F1F8 US 188 SSS"
@@ -1948,7 +1948,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 182 SSS"
   - "\U0001F1EC\U0001F1E7 GB 183 SSS"
   - "\U0001F1FA\U0001F1F8 US 184 VMS"
-  - "\U0001F1FA\U0001F1F8 US 185 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 185 VMS"
   - "\U0001F1FA\U0001F1F3 UN 186 VMS"
   - "\U0001F1FA\U0001F1F8 US 187 VMS"
   - "\U0001F1FA\U0001F1F8 US 188 SSS"
