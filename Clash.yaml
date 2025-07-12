@@ -362,22 +362,21 @@ proxies:
   - {name: 🇺🇸 US 29 → skywrt, server: series-a1.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
   - {name: 🇺🇸 US 3 → skywrt, server: 212.102.47.129, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
   - {name: 🇺🇸 US 30 → skywrt, server: 45.158.171.136, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
-  - {name: 🇺🇸 US 31 → skywrt, server: baota.me, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us.freeyyds.dpdns.org}}, udp: true}
-  - {name: 🇺🇸 US 32 → skywrt, server: www.hdmoli.com, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fr.freeyyds.dpdns.org}}, udp: true}
-  - {name: 🇺🇸 US 33 → skywrt, server: 94.131.127.239, port: 49072, type: ss, cipher: chacha20-ietf-poly1305, password: XKa5DRhnuBdgfKeZNXff5po96u2RC5VaBZUSToCGoCH4ZBhoGMZcrT9CY646rH3nWRn24d7FEEujr4QwUDFuYQFAoHjtfAgN, udp: true}
-  - {name: 🇺🇸 US 34 → skywrt, server: us.blazeppn.info, port: 443, type: trojan, password: xxoo, sni: us.blazeppn.info, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 35 → skywrt, server: 198.23.229.250, port: 443, type: trojan, password: 2ee85121-31de-4581-a492-eb00f606e392, sni: rc6.freeguard.org, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 36 → skywrt, server: 192.3.107.252, port: 443, type: trojan, password: 2ee85121-31de-4581-a492-eb00f606e392, sni: rc8.freeguard.org, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 37 → skywrt, server: 45.158.171.70, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
-  - {name: 🇺🇸 US 38 → skywrt, server: beta.mattenadene.org, port: 54075, type: ss, cipher: chacha20-ietf-poly1305, password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3, udp: true}
-  - {name: 🇺🇸 US 39 → skywrt, server: 94.131.21.174, port: 54075, type: ss, cipher: chacha20-ietf-poly1305, password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3, udp: true}
+  - {name: 🇺🇸 US 31 → skywrt, server: cloudflare-ip.mofashi.ltd, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us.freeyyds.dpdns.org}}, udp: true}
+  - {name: 🇺🇸 US 32 → skywrt, server: 94.131.127.239, port: 49072, type: ss, cipher: chacha20-ietf-poly1305, password: XKa5DRhnuBdgfKeZNXff5po96u2RC5VaBZUSToCGoCH4ZBhoGMZcrT9CY646rH3nWRn24d7FEEujr4QwUDFuYQFAoHjtfAgN, udp: true}
+  - {name: 🇺🇸 US 33 → skywrt, server: us.blazeppn.info, port: 443, type: trojan, password: xxoo, sni: us.blazeppn.info, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 34 → skywrt, server: 198.23.229.250, port: 443, type: trojan, password: 2ee85121-31de-4581-a492-eb00f606e392, sni: rc6.freeguard.org, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 35 → skywrt, server: 192.3.107.252, port: 443, type: trojan, password: 2ee85121-31de-4581-a492-eb00f606e392, sni: rc8.freeguard.org, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 36 → skywrt, server: 45.158.171.70, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 🇺🇸 US 37 → skywrt, server: beta.mattenadene.org, port: 54075, type: ss, cipher: chacha20-ietf-poly1305, password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3, udp: true}
+  - {name: 🇺🇸 US 38 → skywrt, server: 94.131.21.174, port: 54075, type: ss, cipher: chacha20-ietf-poly1305, password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3, udp: true}
+  - {name: 🇺🇸 US 39 → skywrt, server: 45.158.171.66, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
   - {name: 🇺🇸 US 4 → skywrt, server: 212.102.47.131, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: 🇺🇸 US 40 → skywrt, server: 45.158.171.66, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
-  - {name: 🇺🇸 US 41 → skywrt, server: 166.1.157.228, port: 55330, type: ss, cipher: chacha20-ietf-poly1305, password: rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg, udp: true}
-  - {name: 🇺🇸 US 42 → skywrt, server: exchange.gameaurela.click, port: 52952, type: ss, cipher: chacha20-ietf-poly1305, password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj, udp: true}
-  - {name: 🇺🇸 US 43 → skywrt, server: 167.88.61.119, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 🇺🇸 US 44 → skywrt, server: 205.134.180.137, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: g13S7doXar0A, udp: true}
-  - {name: 🇺🇸 US 45 → skywrt, server: 37.19.198.243, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US 40 → skywrt, server: 166.1.157.228, port: 55330, type: ss, cipher: chacha20-ietf-poly1305, password: rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg, udp: true}
+  - {name: 🇺🇸 US 41 → skywrt, server: exchange.gameaurela.click, port: 52952, type: ss, cipher: chacha20-ietf-poly1305, password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj, udp: true}
+  - {name: 🇺🇸 US 42 → skywrt, server: 167.88.61.119, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 🇺🇸 US 43 → skywrt, server: 205.134.180.137, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: g13S7doXar0A, udp: true}
+  - {name: 🇺🇸 US 44 → skywrt, server: 37.19.198.243, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
   - {name: 🇺🇸 US 5 → skywrt, server: 212.102.47.130, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
   - {name: 🇺🇸 US 6 → skywrt, server: 173.244.56.6, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
   - {name: 🇺🇸 US 7 → skywrt, server: 172.67.131.27, port: 2053, type: vmess, uuid: 350e2b01-d410-44a6-90ba-6483f1062972, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rak2d4.89060004.xyz}}, udp: true}
@@ -581,7 +580,6 @@ proxy-groups:
       - 🇺🇸 US 42 → skywrt
       - 🇺🇸 US 43 → skywrt
       - 🇺🇸 US 44 → skywrt
-      - 🇺🇸 US 45 → skywrt
       - 🇺🇸 US 5 → skywrt
       - 🇺🇸 US 6 → skywrt
       - 🇺🇸 US 7 → skywrt
@@ -774,7 +772,6 @@ proxy-groups:
       - 🇺🇸 US 42 → skywrt
       - 🇺🇸 US 43 → skywrt
       - 🇺🇸 US 44 → skywrt
-      - 🇺🇸 US 45 → skywrt
       - 🇺🇸 US 5 → skywrt
       - 🇺🇸 US 6 → skywrt
       - 🇺🇸 US 7 → skywrt
@@ -841,7 +838,6 @@ proxy-groups:
       - 🇺🇸 US 42 → skywrt
       - 🇺🇸 US 43 → skywrt
       - 🇺🇸 US 44 → skywrt
-      - 🇺🇸 US 45 → skywrt
       - 🇺🇸 US 5 → skywrt
       - 🇺🇸 US 6 → skywrt
       - 🇺🇸 US 7 → skywrt
@@ -1194,7 +1190,6 @@ proxy-groups:
       - 🇺🇸 US 42 → skywrt
       - 🇺🇸 US 43 → skywrt
       - 🇺🇸 US 44 → skywrt
-      - 🇺🇸 US 45 → skywrt
       - 🇺🇸 US 5 → skywrt
       - 🇺🇸 US 6 → skywrt
       - 🇺🇸 US 7 → skywrt
