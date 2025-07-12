@@ -1388,22 +1388,7 @@ proxies:
     headers:
       Host: orvps2.horsenma.net
   udp: true
-- name: "\U0001F1FA\U0001F1F3 UN 185 VMS"
-  server: rak1ding.89060004.xyz
-  port: 2083
-  type: vmess
-  uuid: 75d96365-1229-4fc4-dbda-855717f876cf
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak1d3.988988.shop
-  udp: true
-- name: "\U0001F1FA\U0001F1F3 UN 186 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 185 VMS"
   server: baota.me
   port: 80
   type: vmess
@@ -1418,7 +1403,7 @@ proxies:
     headers:
       Host: us.freeyyds.dpdns.org
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 187 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 186 VMS"
   server: cloudflare-ip.mofashi.ltd
   port: 80
   type: vmess
@@ -1433,14 +1418,14 @@ proxies:
     headers:
       Host: us.freeyyds.dpdns.org
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 188 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 187 SSS"
   server: 104.167.197.25
   port: 57456
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 360e21d21977dc11
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 189 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 188 TJN"
   server: us.blazeppn.info
   port: 443
   type: trojan
@@ -1448,26 +1433,34 @@ proxies:
   sni: us.blazeppn.info
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 190 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 189 SSS"
   server: 45.158.171.66
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 191 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 190 SSS"
   server: 45.158.171.70
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 192 TJN"
+- name: "\U0001F1FA\U0001F1F8 US 191 TJN"
   server: 198.23.229.250
   port: 443
   type: trojan
   password: 2ee85121-31de-4581-a492-eb00f606e392
   sni: rc6.freeguard.org
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 192 TJN"
+  server: 192.3.107.252
+  port: 443
+  type: trojan
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  sni: rc8.freeguard.org
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 193 SSS"
@@ -1477,71 +1470,63 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 194 TJN"
-  server: 192.3.107.252
-  port: 443
-  type: trojan
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  sni: rc8.freeguard.org
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 195 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 194 SSS"
   server: 94.131.21.174
   port: 54075
   type: ss
   cipher: chacha20-ietf-poly1305
   password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 196 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 195 SSS"
   server: beta.mattenadene.org
   port: 54075
   type: ss
   cipher: chacha20-ietf-poly1305
   password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 197 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 196 SSS"
   server: 167.88.61.14
   port: 8118
   type: ss
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 198 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 197 SSS"
   server: 156.146.38.169
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 199 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 198 SSS"
   server: 156.146.38.170
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 200 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 199 SSS"
   server: 173.244.56.6
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 201 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 200 SSS"
   server: 104.192.226.106
   port: 989
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 202 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 201 SSS"
   server: 156.146.38.167
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: "\U0001F1FA\U0001F1F3 UN 203 SSR"
+- name: "\U0001F1FA\U0001F1F3 UN 202 SSR"
   server: 'NULL'
   port: 11708
   type: ssr
@@ -1739,16 +1724,16 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 182 SSS"
   - "\U0001F1EC\U0001F1E7 GB 183 SSS"
   - "\U0001F1FA\U0001F1F8 US 184 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 185 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 186 VMS"
-  - "\U0001F1FA\U0001F1F8 US 187 VMS"
-  - "\U0001F1FA\U0001F1F8 US 188 SSS"
-  - "\U0001F1FA\U0001F1F8 US 189 TJN"
+  - "\U0001F1FA\U0001F1F8 US 185 VMS"
+  - "\U0001F1FA\U0001F1F8 US 186 VMS"
+  - "\U0001F1FA\U0001F1F8 US 187 SSS"
+  - "\U0001F1FA\U0001F1F8 US 188 TJN"
+  - "\U0001F1FA\U0001F1F8 US 189 SSS"
   - "\U0001F1FA\U0001F1F8 US 190 SSS"
-  - "\U0001F1FA\U0001F1F8 US 191 SSS"
+  - "\U0001F1FA\U0001F1F8 US 191 TJN"
   - "\U0001F1FA\U0001F1F8 US 192 TJN"
   - "\U0001F1FA\U0001F1F8 US 193 SSS"
-  - "\U0001F1FA\U0001F1F8 US 194 TJN"
+  - "\U0001F1FA\U0001F1F8 US 194 SSS"
   - "\U0001F1FA\U0001F1F8 US 195 SSS"
   - "\U0001F1FA\U0001F1F8 US 196 SSS"
   - "\U0001F1FA\U0001F1F8 US 197 SSS"
@@ -1756,8 +1741,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 199 SSS"
   - "\U0001F1FA\U0001F1F8 US 200 SSS"
   - "\U0001F1FA\U0001F1F8 US 201 SSS"
-  - "\U0001F1FA\U0001F1F8 US 202 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 203 SSR"
+  - "\U0001F1FA\U0001F1F3 UN 202 SSR"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1948,16 +1932,16 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 182 SSS"
   - "\U0001F1EC\U0001F1E7 GB 183 SSS"
   - "\U0001F1FA\U0001F1F8 US 184 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 185 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 186 VMS"
-  - "\U0001F1FA\U0001F1F8 US 187 VMS"
-  - "\U0001F1FA\U0001F1F8 US 188 SSS"
-  - "\U0001F1FA\U0001F1F8 US 189 TJN"
+  - "\U0001F1FA\U0001F1F8 US 185 VMS"
+  - "\U0001F1FA\U0001F1F8 US 186 VMS"
+  - "\U0001F1FA\U0001F1F8 US 187 SSS"
+  - "\U0001F1FA\U0001F1F8 US 188 TJN"
+  - "\U0001F1FA\U0001F1F8 US 189 SSS"
   - "\U0001F1FA\U0001F1F8 US 190 SSS"
-  - "\U0001F1FA\U0001F1F8 US 191 SSS"
+  - "\U0001F1FA\U0001F1F8 US 191 TJN"
   - "\U0001F1FA\U0001F1F8 US 192 TJN"
   - "\U0001F1FA\U0001F1F8 US 193 SSS"
-  - "\U0001F1FA\U0001F1F8 US 194 TJN"
+  - "\U0001F1FA\U0001F1F8 US 194 SSS"
   - "\U0001F1FA\U0001F1F8 US 195 SSS"
   - "\U0001F1FA\U0001F1F8 US 196 SSS"
   - "\U0001F1FA\U0001F1F8 US 197 SSS"
@@ -1965,7 +1949,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 199 SSS"
   - "\U0001F1FA\U0001F1F8 US 200 SSS"
   - "\U0001F1FA\U0001F1F8 US 201 SSS"
-  - "\U0001F1FA\U0001F1F8 US 202 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 203 SSR"
+  - "\U0001F1FA\U0001F1F3 UN 202 SSR"
 rules:
 - "MATCH,\U0001F310 Proxy"
