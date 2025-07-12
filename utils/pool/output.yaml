@@ -1381,7 +1381,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: cvII85TrW6n0OGyfpHVS1u
   udp: true
-- name: "\U0001F1FA\U0001F1F3 UN 182 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 182 VMS"
   server: www.hdmoli.com
   port: 80
   type: vmess
@@ -1490,43 +1490,28 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: g13S7doXar0A
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 196 VMS"
-  server: klo.986986.shop
-  port: 443
-  type: vmess
-  uuid: b75c9731-408d-4aa6-8ae9-3857205113a1
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: klo.986986.shop
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 197 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 196 SSS"
   server: 37.19.198.243
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 198 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 197 SSS"
   server: 212.102.47.130
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 199 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 198 SSS"
   server: 173.244.56.6
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 200 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 199 VMS"
   server: 172.67.131.27
   port: 2053
   type: vmess
@@ -1541,21 +1526,21 @@ proxies:
     headers:
       Host: rak2d4.89060004.xyz
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 201 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 200 SSS"
   server: 212.102.47.132
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 202 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 201 SSS"
   server: 156.146.38.168
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: "\U0001F1FA\U0001F1F3 UN 203 SSR"
+- name: "\U0001F1FA\U0001F1F3 UN 202 SSR"
   server: 'NULL'
   port: 11708
   type: ssr
@@ -1750,7 +1735,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 179 SSS"
   - "\U0001F1FA\U0001F1F8 US 180 SSS"
   - "\U0001F1FA\U0001F1F8 US 181 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 182 VMS"
+  - "\U0001F1FA\U0001F1F8 US 182 VMS"
   - "\U0001F1FA\U0001F1F8 US 183 SSS"
   - "\U0001F1FA\U0001F1F8 US 184 TJN"
   - "\U0001F1FA\U0001F1F8 US 185 TJN"
@@ -1764,14 +1749,13 @@ proxy-groups:
   - "\U0001F1E7\U0001F1EC BG 193 SSS"
   - "\U0001F1FA\U0001F1F8 US 194 SSS"
   - "\U0001F1FA\U0001F1F8 US 195 SSS"
-  - "\U0001F1FA\U0001F1F8 US 196 VMS"
+  - "\U0001F1FA\U0001F1F8 US 196 SSS"
   - "\U0001F1FA\U0001F1F8 US 197 SSS"
   - "\U0001F1FA\U0001F1F8 US 198 SSS"
-  - "\U0001F1FA\U0001F1F8 US 199 SSS"
-  - "\U0001F1FA\U0001F1F8 US 200 VMS"
+  - "\U0001F1FA\U0001F1F8 US 199 VMS"
+  - "\U0001F1FA\U0001F1F8 US 200 SSS"
   - "\U0001F1FA\U0001F1F8 US 201 SSS"
-  - "\U0001F1FA\U0001F1F8 US 202 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 203 SSR"
+  - "\U0001F1FA\U0001F1F3 UN 202 SSR"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -1959,7 +1943,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 179 SSS"
   - "\U0001F1FA\U0001F1F8 US 180 SSS"
   - "\U0001F1FA\U0001F1F8 US 181 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 182 VMS"
+  - "\U0001F1FA\U0001F1F8 US 182 VMS"
   - "\U0001F1FA\U0001F1F8 US 183 SSS"
   - "\U0001F1FA\U0001F1F8 US 184 TJN"
   - "\U0001F1FA\U0001F1F8 US 185 TJN"
@@ -1973,13 +1957,12 @@ proxy-groups:
   - "\U0001F1E7\U0001F1EC BG 193 SSS"
   - "\U0001F1FA\U0001F1F8 US 194 SSS"
   - "\U0001F1FA\U0001F1F8 US 195 SSS"
-  - "\U0001F1FA\U0001F1F8 US 196 VMS"
+  - "\U0001F1FA\U0001F1F8 US 196 SSS"
   - "\U0001F1FA\U0001F1F8 US 197 SSS"
   - "\U0001F1FA\U0001F1F8 US 198 SSS"
-  - "\U0001F1FA\U0001F1F8 US 199 SSS"
-  - "\U0001F1FA\U0001F1F8 US 200 VMS"
+  - "\U0001F1FA\U0001F1F8 US 199 VMS"
+  - "\U0001F1FA\U0001F1F8 US 200 SSS"
   - "\U0001F1FA\U0001F1F8 US 201 SSS"
-  - "\U0001F1FA\U0001F1F8 US 202 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 203 SSR"
+  - "\U0001F1FA\U0001F1F3 UN 202 SSR"
 rules:
 - "MATCH,\U0001F310 Proxy"
