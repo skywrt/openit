@@ -185,25 +185,25 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   udp: true
 - name: "\U0001F1EE\U0001F1F7 IR 27 SSS"
-  server: 151.242.251.131
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  udp: true
-- name: "\U0001F1EE\U0001F1F7 IR 28 SSS"
   server: beesyar.org
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 4a2rfixophdjffa8KVA4Aa
   udp: true
-- name: "\U0001F1F1\U0001F1F9 LT 29 SSS"
-  server: 45.87.175.22
+- name: "\U0001F1EE\U0001F1F7 IR 28 SSS"
+  server: 151.242.251.131
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  udp: true
+- name: "\U0001F1F1\U0001F1F9 LT 29 SSS"
+  server: 45.87.175.157
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
   udp: true
 - name: "\U0001F1F1\U0001F1F9 LT 30 SSS"
   server: 45.87.175.92
@@ -234,56 +234,56 @@ proxies:
   password: 4a2rfixophdjffa8KVA4Aa
   udp: true
 - name: "\U0001F1F1\U0001F1F9 LT 34 SSS"
-  server: 45.87.175.157
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-  udp: true
-- name: "\U0001F1F1\U0001F1F9 LT 35 SSS"
   server: 45.87.175.154
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 4a2rfixophdjffa8KVA4Aa
   udp: true
-- name: "\U0001F1F1\U0001F1F9 LT 36 SSS"
+- name: "\U0001F1F1\U0001F1F9 LT 35 SSS"
   server: 45.87.175.166
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: QCXDxuDlTTMD7jtgHUjIoj
   udp: true
-- name: "\U0001F1F1\U0001F1F9 LT 37 SSS"
+- name: "\U0001F1F1\U0001F1F9 LT 36 SSS"
   server: 45.87.175.192
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 1RWwXhwfAB5gAEozU4G2Pg
   udp: true
-- name: "\U0001F1F1\U0001F1F9 LT 38 SSS"
+- name: "\U0001F1F1\U0001F1F9 LT 37 SSS"
   server: 45.87.175.199
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 1RWwXhwfAB5gAEozU4G2Pg
   udp: true
-- name: "\U0001F1F1\U0001F1F9 LT 39 SSS"
+- name: "\U0001F1F1\U0001F1F9 LT 38 SSS"
   server: 45.87.175.35
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: "\U0001F1F1\U0001F1F9 LT 40 SSS"
+- name: "\U0001F1F1\U0001F1F9 LT 39 SSS"
   server: 45.87.175.65
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: "\U0001F1F1\U0001F1F9 LT 41 SSS"
+- name: "\U0001F1F1\U0001F1F9 LT 40 SSS"
   server: 45.87.175.28
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: "\U0001F1F1\U0001F1F9 LT 41 SSS"
+  server: 45.87.175.22
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
@@ -1388,20 +1388,20 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 185 VMS"
-  server: rak1ding.89060004.xyz
-  port: 2083
+- name: "\U0001F1FA\U0001F1F3 UN 185 VMS"
+  server: cloudflare-ip.mofashi.ltd
+  port: 80
   type: vmess
-  uuid: 75d96365-1229-4fc4-dbda-855717f876cf
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: rak1d3.988988.shop
+      Host: us.freeyyds.dpdns.org
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 186 SSS"
   server: 104.167.197.25
@@ -1709,7 +1709,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 182 SSS"
   - "\U0001F1EC\U0001F1E7 GB 183 SSS"
   - "\U0001F1EC\U0001F1E7 GB 184 SSS"
-  - "\U0001F1FA\U0001F1F8 US 185 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 185 VMS"
   - "\U0001F1FA\U0001F1F8 US 186 SSS"
   - "\U0001F1FA\U0001F1F8 US 187 TJN"
   - "\U0001F1FA\U0001F1F8 US 188 SSS"
@@ -1916,7 +1916,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 182 SSS"
   - "\U0001F1EC\U0001F1E7 GB 183 SSS"
   - "\U0001F1EC\U0001F1E7 GB 184 SSS"
-  - "\U0001F1FA\U0001F1F8 US 185 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 185 VMS"
   - "\U0001F1FA\U0001F1F8 US 186 SSS"
   - "\U0001F1FA\U0001F1F8 US 187 TJN"
   - "\U0001F1FA\U0001F1F8 US 188 SSS"
